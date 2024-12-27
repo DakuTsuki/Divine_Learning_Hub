@@ -47,7 +47,7 @@ export default function Hero(){
       <Image src={heroimg} alt='Hero_Img' className="hidden lg:block w-[600px]"/>
       </div>
 
-      <div className='w-[1200px] h-[227px] bg-[#4D2C5E] absolute left-[144px] hidden lg:flex justify-between items-center rounded-[20px] p- 2rem_1rem]'>
+      <div className='w-[90%] h-[227px] bg-[#4D2C5E] absolute left-[5%] hidden lg:flex justify-between items-center rounded-[20px] p-[1%]'>
       <div className='flex'>
       <div className='flex '>
           <div className='relative flex'>
