@@ -30,11 +30,11 @@ export default function Tracks() {
   ];
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between p-[2rem_8%] sm:p-[2rem_19%] md:p-[2rem_25%] w-[100%] lg:p-[10rem_6rem] gap-11 md:w-[65rem] lg:w-[94rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between p-[2rem_8%] sm:p-[2rem_19%] md:p-[2rem_25%] w-[85%] lg:p-[10rem_4rem] md:w-[65rem] lg:w-[100%]">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="bg-white w-[100%] h-[22rem] lg:h-[25rem] rounded-[14px] shadow-lg backdrop-blur-md"
+            className="bg-white w-[89%] h-[22rem] rounded-[14px] shadow-lg backdrop-blur-md"
             data-aos="zoom-in"
             data-aos-delay="200"
              data-aos-mirror="true"
@@ -55,13 +55,13 @@ export default function Tracks() {
 
             </div>
 
-            <div className="w-[19rem] lg:w-[24rem] h-[1px] bg-[#ACACAC] my-4"></div>
+            <div className="w-[19rem] lg:w-[100%] h-[1px] bg-[#ACACAC] my-4"></div>
             <div className="text-[#ACACAC] flex justify-between w-[20rem]">
             <div className="flex items-center text-[1rem]"><FaRegClock className="text-black"/>22hr 30min</div>
             <div className="flex items-center text-[1rem]"><CiVideoOn className="text-black"/>34 Courses</div>
             <div className="flex items-center text-[1rem]"><HiDownload className="text-black"/>250 Sales</div>
             </div>
-            <Button className="bg-[#FF7426] w-[13rem] h-[3.5rem] mt-[0.5rem] rounded-[50px] ml-[3rem] lg:ml-[5rem]">Join Course</Button>
+            <Button className="bg-[#FF7426] w-[13rem] h-[3.5rem] mt-[0.5rem] rounded-[50px] ml-[3rem] lg:ml-[18%]">Join Course</Button>
           </div>
           </div>
         ))}
