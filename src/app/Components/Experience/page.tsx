@@ -6,7 +6,7 @@ import heart from '../../../../public/hearts 1.png'
 export default function Experince() {
   return (
     <div>
-      <div className="mt-6 bg-[#FDF8EE] w-full h-full relative flex  flex-col lg:flex-row items-center gap-[6rem] p-[2rem_1rem] md:p-[2rem_9rem] lg:p-[2rem_20rem]">
+      <div className="mt-6 bg-[#FDF8EE] w-full h-full relative flex  flex-col lg:flex-row items-center gap-[6rem] p-[2rem_1rem] md:p-[2rem_9rem] lg:p-[2rem_10rem]">
         <Image
           src={bgImg}
           alt="Background_Image"
