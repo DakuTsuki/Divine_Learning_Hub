@@ -30,11 +30,11 @@ export default function Tracks() {
   ];
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between p-[2rem_15%] md:p-[2rem_6rem] xs:w-[25rem] lg:p-[10rem_6rem] gap-11 md:w-[65rem] lg:w-[94rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between p-[2rem_13%] sm:p-[2rem_19%] md:p-[2rem_8%] w-[100%] lg:p-[10rem_6rem] gap-11 md:w-[65rem] lg:w-[94rem]">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="bg-white w-[21rem] lg:w-[27rem] h-[22rem] lg:h-[25rem] rounded-[14px] shadow-lg backdrop-blur-md"
+            className="bg-white w-[100%] h-[22rem] lg:h-[25rem] rounded-[14px] shadow-lg backdrop-blur-md"
             data-aos="zoom-in"
             data-aos-delay="200"
              data-aos-mirror="true"

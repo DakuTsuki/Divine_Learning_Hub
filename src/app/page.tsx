@@ -28,7 +28,7 @@ export default function Home() {
 
     initAOS()
   }, []);
-  return <div>
+  return <div className='overflow-x-hidden'>
     <Hero/>
     <Tracks/> 
     <Experince/>

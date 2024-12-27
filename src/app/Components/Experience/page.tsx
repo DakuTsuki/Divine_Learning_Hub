@@ -10,7 +10,7 @@ export default function Experince() {
         <Image
           src={bgImg}
           alt="Background_Image"
-          className="w-[35rem]
+          className="w-[50%]
                       "
         />
 
