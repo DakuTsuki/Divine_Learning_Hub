@@ -48,9 +48,10 @@ export default function Tracks() {
               {/* Map five stars */}
               {Array(5)
               .fill(null)
-              .map(()=>(
-                <IoStarSharp className="w-5 h-5 text-yellow-500"/>
+              .map((_, index) => (
+                <IoStarSharp key={index} className="w-5 h-5 text-yellow-500" />
               ))}
+            
 
             </div>
 
