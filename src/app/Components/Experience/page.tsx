@@ -6,7 +6,7 @@ import heart from '../../../../public/hearts 1.png'
 export default function Experince() {
   return (
     <div>
-      <div className="mt-6 bg-[#FDF8EE] w-full h-[135vh] lg:h-[34rem] relative flex  flex-col lg:flex-row items-center gap-[6rem] p-[2rem_9rem] lg:p-[2rem_6rem]">
+      <div className="mt-6 bg-[#FDF8EE] w-full h-full relative flex  flex-col lg:flex-row items-center gap-[6rem] p-[2rem_1rem] md:p-[2rem_9rem] lg:p-[2rem_6rem]">
         <Image
           src={bgImg}
           alt="Background_Image"
@@ -22,7 +22,7 @@ export default function Experince() {
 
           <div className="flex gap-4">
             <div className="relative flex">
-              <Image src={purple} alt="purple_background" className=""/>
+              <Image src={purple} alt="purple_background" className="w-[9rem]"/>
               <Image src={heart} alt="Heart_Icon" className="absolute top-8 left-6"/>
             </div>
             <div>
@@ -32,7 +32,7 @@ export default function Experince() {
           </div>
           <div className="flex gap-4">
             <div className="relative flex">
-              <Image src={purple} alt="purple_background" className=""/>
+              <Image src={purple} alt="purple_background" className="w-[9rem]"/>
               <Image src={heart} alt="Heart_Icon" className="absolute top-8 left-6"/>
             </div>
             <div>

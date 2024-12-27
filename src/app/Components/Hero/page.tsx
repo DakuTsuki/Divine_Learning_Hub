@@ -19,7 +19,7 @@ import { FaSearch } from "react-icons/fa";
 
 export default function Hero(){
   return <div>
-    <div className="bg-[#FDF8EE] w-full h-[100vh] relative ">
+    <div className="bg-[#FDF8EE] w-full sm:h-[50vh] lg:h-[100vh] relative ">
       <Image src={mergeImg} className="absolute w-[60px] left-[426px]" alt='background_Image'/>
       <Image src={mergeImg2} alt='background_Image2'className="absolute w-[70px] left-[270px] top-[400.18px]"/>
       <Image src={mergeImg3} alt='background_Image3' className="absolute w-[85px] left-[700px] top-[33.18px]"/>
@@ -33,8 +33,8 @@ export default function Hero(){
       {/* HeroText */}
       <div className="flex flex-cols lg:flex-row justify-between items-center p-[100px_30px] lg:p-[100px_61px]">
         <div className="text-left">
-          <h2 className="text-[60px] font-black leading-[4.75rem]">The <span className="text-[#FF7426]">Smart</span> <br /> Choice for <span  className="text-[#FF7426]">Future</span>.</h2>
-          <p className="text-[#8A8A8A] font-medium text-[19px] lg:text-[20px] w-[36rem] lg:w-[39rem]">Elearn is a global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the...</p>
+          <h2 className="text-[2.7rem] md:text-[3rem] lg:text-[4rem] font-black leading-[3.75rem] lg:leading-[4.75rem]">The <span className="text-[#FF7426]">Smart</span> <br /> Choice for <span  className="text-[#FF7426]">Future</span>.</h2>
+          <p className="text-[#8A8A8A] font-medium text-[1rem] lg:text-[20px] w-[23rem] md:w-[25rem] md:[36rem] lg:w-[39rem]">Elearn is a global training provider based across the UK that specialises in accredited and bespoke training courses. We crush the...</p>
 
           <div className="p-[10px_21px] flex w-full max-w-[35rem] items-center space-x-2 bg-white rounded-[15px]">
           <FaSearch className='text-black text-[30px]'/>

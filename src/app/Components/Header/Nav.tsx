@@ -10,9 +10,9 @@ interface Props {
 const Nav: React.FC<Props> = ({ openNav }) => {
   return (
     <div>
-      <div className="relative p-[2rem_4rem] flex justify-between items-center bg-[#FDF8EE]">
+      <div className="relative p-[2rem_2rem] lg:p-[2rem_4rem] flex justify-between items-center bg-[#FDF8EE]">
         {/* Logo */}
-        <Image src={Logo} alt="Logo" className="w-[9rem] lg:w-48 h-16" />
+        <Image src={Logo} alt="Logo" className="w-[7rem] lg:w-48 h-16" />
         {/* NavLinks */}
         <div className="w-[42rem] h-5 ml-20">
           <div className="flex justify-between items-center h-full">
