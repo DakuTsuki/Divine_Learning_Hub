@@ -4,6 +4,7 @@ import { CiVideoOn } from "react-icons/ci";
 import { HiDownload } from "react-icons/hi";
 import { Button } from "@/components/ui/button";
 import { IoStarSharp } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Tracks() {
   const cards = [
@@ -29,22 +30,34 @@ export default function Tracks() {
     },
   ];
   return (
-    <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between p-[2rem_8%] sm:p-[2rem_19%] md:p-[2rem_25%] w-[85%] lg:p-[10rem_4rem] md:w-[65rem] lg:w-[100%]">
+    <>
+
+      <section className="px-5 lg:px-16 py-24">
+      <div className=" flex justify-center md:justify-between flex-wrap gap-y-10 mt-20">
         {cards.map((card) => (
           <div
             key={card.id}
-            className="bg-white w-[89%] h-[22rem] rounded-[14px] shadow-lg backdrop-blur-md"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-             data-aos-mirror="true"
-             data-aos-once="false">
+            className="border border-lightGray-10 p-4  max-w-[380px] md:max-w-[48%] lg:max-w-[31%]"
+           >
             <Image src={card.image} alt="" className="rounded-md w-full mb-3" width={100} height={100}/>
 
-            <div className="p-[1rem_1rem]">
-            <h3 className="font-bold text-lg mb-2">{card.title}</h3>
-            <p className="text-sm text-gray-600">{card.price}</p>
-            <div className="flex items-center mt-[-2.5rem] float-right ">
+            <div className="pt-4 relative">
+            <ul className=" list-none relative">
+            <li className="ml-1 product-head ">
+            <h3 className="text-lg font-medium max-w-[70%]">{card.title}</h3>
+            <span className=" absolute top-0 bottom-0 flex items-center right-0 font-medium text-base">
+                    4 months
+                  </span>
+                  </li>
+                  </ul>
+
+                  <p className=" text-base pt-2">
+                The training targets people with basic or no experience in a
+                particular sector in the I.T industry, for student aspiring to
+                work.
+              </p>
+            {/* <p className="text-sm text-gray-600">{card.price}</p> */}
+            <div className="flex items-center absolute top-0 left-60">
               {/* Map five stars */}
               {Array(5)
               .fill(null)
@@ -61,11 +74,22 @@ export default function Tracks() {
             <div className="flex items-center text-[1rem]"><CiVideoOn className="text-black"/>34 Courses</div>
             <div className="flex items-center text-[1rem]"><HiDownload className="text-black"/>250 Sales</div>
             </div>
-            <Button className="bg-[#FF7426] w-[13rem] h-[3.5rem] mt-[0.5rem] rounded-[50px] ml-[3rem] lg:ml-[18%]">Join Course</Button>
+            <div className=" flex justify-between items-center pt-8">
+                <p className=" font-medium text-lg">₦250,000</p>
+                {/* <Link href={/}> */}
+                  <Button
+                    className="bg-[#FF7426]"
+                    type={"button"}
+                  >
+                    Start Now
+                    </Button>
+                {/* </Link> */}
+              </div>
           </div>
           </div>
         ))}
       </div>
-    </div>
+      </section>
+    </>
   );
 }
