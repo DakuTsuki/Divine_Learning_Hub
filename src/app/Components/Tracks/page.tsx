@@ -57,7 +57,7 @@ export default function Tracks() {
                 work.
               </p>
             {/* <p className="text-sm text-gray-600">{card.price}</p> */}
-            <div className="flex items-center absolute top-0 left-60">
+            <div className="flex items-center absolute top-0 left-[14rem]">
               {/* Map five stars */}
               {Array(5)
               .fill(null)
