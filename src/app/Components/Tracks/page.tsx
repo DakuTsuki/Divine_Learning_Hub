@@ -32,20 +32,46 @@ export default function Tracks() {
   return (
     <>
 
-      <section className="px-5 lg:px-16 py-24">
-      <div className=" flex justify-center md:justify-between flex-wrap gap-y-10 mt-20">
+      <section className="px-5 
+                          lg:px-16 
+                          py-24"
+      >
+      <div className=" flex 
+                       justify-center 
+                       md:justify-between 
+                       flex-wrap 
+                       gap-y-10 
+                       mt-20"
+       >
         {cards.map((card) => (
           <div
             key={card.id}
-            className="border border-lightGray-10 p-4  max-w-[380px] md:max-w-[48%] lg:max-w-[31%]"
+            className="border 
+                       border-lightGray-10 
+                       p-4 
+                       max-w-[380px] 
+                       md:max-w-[48%] 
+                       lg:max-w-[31%]"
            >
-            <Image src={card.image} alt="" className="rounded-md w-full mb-3" width={100} height={100}/>
+            <Image 
+                  src={card.image} 
+                  alt="" 
+                  className="rounded-md w-full mb-3" 
+                  width={100} 
+                  height={100}
+            />
 
             <div className="pt-4 relative">
             <ul className=" list-none relative">
             <li className="ml-1 product-head ">
-            <h3 className="text-lg font-medium max-w-[70%]">{card.title}</h3>
-            <span className=" absolute top-0 bottom-0 flex items-center right-0 font-medium text-base">
+            <h3 className="text-lg 
+                           font-medium 
+                           max-w-[70%]"
+            >
+              {card.title}
+            </h3>
+
+            <span className="absolute top-0 bottom-0 flex items-center right-0 font-medium text-base">
                     4 months
                   </span>
                   </li>

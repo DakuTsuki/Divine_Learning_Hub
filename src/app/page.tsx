@@ -12,6 +12,8 @@ import { useEffect } from 'react';
 import Experince from "./Components/Experience/page";
 import Hero from "./Components/Hero/page";
 import Tracks from "./Components/Tracks/page";
+import Reviews from './Components/Reviews/page'
+import NewsLetter from './Components/NewsLetter/page';
 
 export default function Home() {
   useEffect(()=>{
@@ -32,5 +34,7 @@ export default function Home() {
     <Hero/>
     <Tracks/> 
     <Experince/>
-  </div>;
+    <Reviews/>
+    <NewsLetter/>
+      </div>;
 }
