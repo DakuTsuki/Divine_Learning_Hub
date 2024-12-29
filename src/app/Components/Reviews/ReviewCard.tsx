@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { FaStar, FaRegStar } from 'react-icons/fa'; // Import solid and outline star icons
 
@@ -19,7 +20,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ avatar, name, rating, review, d
                       border-b 
                       pb-4"
       >
-        <img
+        <Image
           src={avatar}
           alt={name}
           className="w-14 
@@ -72,7 +73,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ avatar, name, rating, review, d
                     italic 
                     leading-relaxed"
        >
-        "{review}"
+        {review}
       </p>
     </div>
   );
